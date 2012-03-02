@@ -1,0 +1,26 @@
+#!/bin/bash
+
+PROJDIR=~/Projects/VimSwitch
+
+####################
+
+cd $PROJDIR
+
+for i in `ls`
+do
+  if [ -d $i ]; then
+    cd $i
+    git pull
+    cd ..
+  fi
+done
+
+who=$1
+
+if [ -h ~/.vim ]; then
+  mv ~/.vim ~/.vim.old
+  ln -s $PROJDIR/$who ~/.vim
+  mv ~/.vimrc ~/.vimrc.old
+  ln -s ~/.vim/.vimrc ~/.vimrc
+  echo "Switched to $who. Remember to source .vimrc and do BundleInstall"
+fi
