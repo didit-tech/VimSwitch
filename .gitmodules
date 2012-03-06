@@ -4,6 +4,3 @@
 [submodule "romanmt"]
 	path = romanmt
 	url = git://github.com/romanmt/vimfiles.git
-[submodule "msilverman"]
-	path = msilverman
-	url = git://github.com/dogeared/Vimfiles.git
