@@ -14,6 +14,7 @@ do
     cd $i
     git submodule init
     git submodule update
+    git pull
     cd ..
   fi
 done
@@ -24,6 +25,6 @@ if [ -h ~/.vim ]; then
   mv ~/.vim ~/.vim.old
   ln -s $PROJDIR/$who ~/.vim
   mv ~/.vimrc ~/.vimrc.old
-  ln -s ~/.vim/.vimrc ~/.vimrc
+  ln -s ~/.vim/vimrc ~/.vimrc
   echo "Switched to $who. Remember to source .vimrc and do BundleInstall"
 fi
