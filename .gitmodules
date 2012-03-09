@@ -7,3 +7,6 @@
 [submodule "msilverman"]
 	path = msilverman
 	url = git@github.com:dogeared/MicahVimFiles.git
+[submodule "tclay"]
+	path = tclay
+	url = git@github.com:thadclay/MicahVimFiles.git

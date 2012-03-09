@@ -21,7 +21,7 @@ done
 
 who=$1
 
-if [ -h ~/.vim ]; then
+if [ -h ~/.vim || ! -z ~/.vim ]; then
   mv ~/.vim ~/.vim.old
   ln -s $PROJDIR/$who ~/.vim
   mv ~/.vimrc ~/.vimrc.old
