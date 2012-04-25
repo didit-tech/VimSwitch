@@ -10,3 +10,6 @@
 [submodule "tclay"]
 	path = tclay
 	url = git@github.com:thadclay/MicahVimFiles.git
+[submodule "jcheung"]
+	path = jcheung
+	url = git@github.com:jcdidit/MicahVimFiles
